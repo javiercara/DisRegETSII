@@ -4,7 +4,7 @@ Title: Funciones y datos de la asignatura "Diseno de Experimentos y Modelos de R
 Version: 0.1.0
 Author: Javier Cara
 Maintainer: Javier Cara <javier.cara@upm.es>
-Description: More about what it does (maybe more than one line)
+Description: Funciones y datos de la asignatura "Diseno de Experimentos y Modelos de Regresion" de la ETSII-UPM
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1

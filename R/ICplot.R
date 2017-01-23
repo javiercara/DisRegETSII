@@ -8,6 +8,7 @@
 #' @param fac: corresponde al nombre del factor que se desea analizar. IMPORTANTE: Este nombre ha de ir entre comillas.
 #' @param alpha: Indica el nivel de significacion del intervalo de confianza calculado.
 #'               Es un argumento opcional. Por defecto es 0.05.
+#' @export
 #' @examples
 #'  mod = aov(consumo ~ marca)
 #'  ICplot(mod, "marca")
