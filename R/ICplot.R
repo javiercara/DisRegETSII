@@ -10,8 +10,8 @@
 #'               Es un argumento opcional. Por defecto es 0.05.
 #' @export
 #' @examples
-#'  mod = aov(consumo ~ marca)
-#'  ICplot(mod, "marca")
+#'  aov(tiempo ~ ven*ant, data = venenos)
+#'  ICplot(mod, "ven")
 #'
 ICplot <- function(modelo,fac,alpha=0.05)
 #

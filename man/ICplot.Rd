@@ -19,8 +19,8 @@ Es un argumento opcional. Por defecto es 0.05.}
 El programa ICplot genera el grafico de los intervalos de confianza para las medias en el analisis de varianza.
 }
 \examples{
- mod = aov(consumo ~ marca)
- ICplot(mod, "marca")
+ aov(tiempo ~ ven*ant, data = venenos)
+ ICplot(mod, "ven")
 
 }
 
