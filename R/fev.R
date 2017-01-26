@@ -1,10 +1,9 @@
 #'
 #' Datos de Forced Expiratory Volume (FEV) en 654 individuos
 #'
-#' Es una muestra de 654 jóvenes entre 3 y 19 años recogidos en Boston (USA) a finales de los 70.
-#' Se desea ver la relación entre la capacidad pulmonar (FEV) y fumar. En este primer análisis
-#' estudiaremos la relación entre FEV y la estatura. En la lección de regresión múltiple estudiaremos
-#' el efecto del tabaco.
+#' Muestra de 654 jovenes entre 3 y 19 años recogidos en Boston (USA)
+#' a finales de los 70. Se desea ver la relacion entre la capacidad pulmonar (FEV)
+#' y fumar.
 #'
 #' @docType data
 #'

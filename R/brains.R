@@ -1,7 +1,7 @@
 #'
-#' Datos del peso del cuerpo y del peso del cerebro de 62 mamíferos
+#' Datos del peso del cuerpo y del peso del cerebro de 62 mamiferos
 #'
-#' Se proporciona el peso medio del cuerpo y del peso cerebro para 62 especies de mamíferos.
+#' Se proporciona el peso medio del cuerpo y del peso cerebro para 62 especies de mamiferos.
 #'
 #' @docType data
 #'

@@ -1,14 +1,14 @@
 #'
-#' Datos del número de errores gramaticales en artículos científicos
+#' Datos del numero de errores gramaticales en articulos cientificos
 #'
 #' Un investigador quiere estudiar el efecto del sexo (hombre, mujeres) y
-#' tipo de formación (ciencias, letras) en el dominio del inglés
+#' tipo de formación (ciencias, letras) en el dominio del ingles
 #' escrito en profesores universitarios. Para ello se analiza el
-#' número de incorrecciones gramaticales en artículos científicos
-#' enviados a publicación. Para combinación de niveles de los
+#' numero de incorrecciones gramaticales en articulos cientificos
+#' enviados a publicacion. Para combinacion de niveles de los
 #' factores se han elegido al azar tres profesores. En la tabla
-#' se proporciona el no de fallos detectados en artículos de 15
-#' páginas.
+#' se proporciona el no de fallos detectados en articulos de 15
+#' paginas.
 #'
 #' @docType data
 #'
@@ -18,7 +18,7 @@
 #' \itemize{
 #' \item sexo: h=hombre, m=mujeres
 #' \item form:  cc=ciencias, ls=letras
-#' \item errores: número de errores gramaticales
+#' \item errores: numero de errores gramaticales
 #' }
 #'
 #' @keywords datasets

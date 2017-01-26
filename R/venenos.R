@@ -1,12 +1,12 @@
 #'
-#' Datos de superviviencia de roedores a los que se le habían suministrado diferentes venenos y antídotos
+#' Datos de superviviencia de roedores a los que se le habian suministrado diferentes venenos y antidotos
 #'
-#' Se pretende combatir los efectos de ciertos agentes tóxicos.
-#' Para ello, se analiza el efecto de tres venenos y cuatro antídotos en el tiempo de supervivencia
+#' Se pretende combatir los efectos de ciertos agentes toxicos.
+#' Para ello, se analiza el efecto de tres venenos y cuatro antidotos en el tiempo de supervivencia
 #' de unas ratas. Para el experimento se cogieron 48 animales y se asignaron al azar a cada uno
 #' de los doce tratamientos resultantes de combinar venenos y antídotos. A cada rata se le
-#' suministro una cierta cantidad de veneno y después de un cierto tiempo se les administró el
-#' antídoto. A partir de este momento se cuenta el tiempo de supervivencia del roedor.
+#' suministro una cierta cantidad de veneno y despues de un cierto tiempo se les administro el
+#' antidoto. A partir de este momento se cuenta el tiempo de supervivencia del roedor.
 #'
 #' @docType data
 #'

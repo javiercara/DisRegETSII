@@ -1,9 +1,9 @@
 #'
 #' Datos de diversas variables medidas en el cuerpo humano
 #'
-#' Datos de 21 variables medidas en el cuerpo humano, entre otras, peso, altura y género, de 507 individuos.
-#' Los datos fueron recogidos entre personas que acudían frecuentemente al gimnasio en USA,
-#' la mayoría de ellos entre 20 y 40 años.
+#' Datos de 21 variables medidas en el cuerpo humano, entre otras, peso, altura y genero, de 507 individuos.
+#' Los datos fueron recogidos entre personas que acudian frecuentemente al gimnasio en USA,
+#' la mayoria de ellos entre 20 y 40 años.
 #'
 #' @docType data
 #'
