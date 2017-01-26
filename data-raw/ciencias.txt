@@ -1,0 +1,15 @@
+sexo	form	errores
+h	cc	22
+h	cc	28
+h	cc	33
+h	ls	8
+h	ls	6
+h	ls	13
+m	cc	12
+m	cc	14
+m	cc	9
+m	ls	5
+m	ls	10
+m	ls	6
+
+

@@ -1,0 +1,5 @@
+quimico = read.table("data-raw/quimico.txt",header=T)
+quimico$con <- factor(quimico$con,labels=c('4%','6%','8%','10%'))
+quimico$temp <- factor(quimico$temp,labels=c('T1','T2'))
+quimico$cat <- factor(quimico$cat,labels=c('C1','C2','C3'))
+save(quimico,file="data/quimico.rda")
