@@ -1,0 +1,51 @@
+#'
+#' Datos de diversas variables medidas en el cuerpo humano
+#'
+#' Datos de 21 variables medidas en el cuerpo humano, entre otras, peso, altura y genero, de 507 individuos.
+#' Los datos fueron recogidos entre personas que acudian frecuentemente al gimnasio en USA,
+#' la mayoria de ellos entre 20 y 40 años.
+#'
+#' @docType data
+#'
+#' @usage data(cuerpo)
+#'
+#' @format Lista con los siguientes campos:
+#' \itemize{
+#' \item A_Hombros: Diametro de Biacromial
+#' \item A_Pelvis: Diametro de Biiliac, o anchura pélvica
+#' \item A_Cade: Diametro de Bitrochanteric
+#' \item AP_Pecho: Profundidad del pecho entre la espina dorsal y el esternon en nivel del pezon, media expiracion
+#' \item AD_Pecho: Diametro del pecho en el nivel del pezon
+#' \item A_Codo: Diametro del codo, suma de los dos codos
+#' \item A_Muneca: Diametro de la muñeca, suma de las dos muñecas
+#' \item A_Rodilla: Diametro de la rodilla, suma de las dos rodillas
+#' \item A_Tobillo: Diametro del tobillo, suma de los dos tobillos
+#' \item C_hombros: Perimetro de los hombros sobre los musculos deltoides
+#' \item C_Pecho: Circunferencia del pecho, linea del pezon en varones y apenas sobre el pecho tejido fino en hembras, media expiracion
+#' \item C_Cintura: Circunferencia de la cintura, la parte mas estrecha del torso debajo de la caja toracica  (costillas) promedio de contraido y posicion relajada
+#' \item C_abdomen: Circunferencia del ombligo (o "abdominal") en ombligo y cresta iliaca, cresta iliaca como señal
+#' \item C_Cadera: Circunferencia de la cadera en el nivel del diametro bitrochanteric
+#' \item C_Muslo: Circunferencia debajo del doblez gluteo, promedio del perimetro del muslo de la derecha e izquierda
+#' \item C_Bicep: Circunferencia de Bicep, doblada, promedio de la derecha e izquierda
+#' \item C_Brazo: Circunferencia del antebrazo, extendido, palma para arriba, media de la derecha e izquierda.
+#' \item C_Rodilla: Circunferencia de la rodilla sobre la pantorrilla, doblada levemente, promedio
+#' \item C_Gemelo: Circunferencia maxima en los gemelos, promedio
+#' \item C_Tobillo: Circunferencia minima del tobillo, promedio
+#' \item C_Muneca: Circunferencia minima de la muñeca, promedio
+#' \item Edad: años
+#' \item Peso: kg
+#' \item Altura: cm
+#' \item Sexo: 1=varon, 0= hembra
+#' }
+#'
+#' @keywords datasets
+#'
+#' @source Exploring Relationships in Body Dimensions,
+#' Grete Heinz,Louis J. Peterson,Roger W. Johnson, Carter J. Kerk,
+#' Journal of Statistics Education, Volume 11, Number 2 (2003),
+#' www.amstat.org/publications/jse/v11n2/datasets.heinz.html
+#'
+#' @examples
+#' data(cuerpo)
+#' \donttest{lm(Peso ~ Altura,data=cuerpo)}
+"cuerpo"

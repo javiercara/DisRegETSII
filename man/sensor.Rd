@@ -3,17 +3,17 @@
 \docType{data}
 \name{sensor}
 \alias{sensor}
-\title{Datos del contenido en CO en los gases de escape de diferentes automóviles}
+\title{Datos del contenido en CO en los gases de escape de diferentes automoviles}
 \format{Lista con los siguientes campos:
 \itemize{
 \item CO: contenido de CO
-\item tiposensor: tipo de sensor, A ó B
+\item tiposensor: tipo de sensor (A, B)
 }}
 \usage{
 data(sensor)
 }
 \description{
-Datos del contenido en CO en los gases de escape de diferentes automóviles
+Datos del contenido en CO en los gases de escape de diferentes automoviles
 medidos con dos sensores diferentes, A y B
 }
 \examples{

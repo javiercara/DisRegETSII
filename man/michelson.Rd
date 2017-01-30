@@ -13,9 +13,9 @@
 data(michelson)
 }
 \description{
-En 1879, el físico norteamericano Albert A. Michelson tomó 100 medidas de la
-velocidad de la luz en el aire empleando una modificación del método propuesto
-por el físico francés Foucault. En 1882, Simon Newcomb midió el tiempo que una
+En 1879, el fisico norteamericano Albert A. Michelson tomo 100 medidas de la
+velocidad de la luz en el aire empleando una modificacion del metodo propuesto
+por el fisico frances Foucault. En 1882, Simon Newcomb midio el tiempo que una
 señal luminosa tardaba en recorrer una distancia de 7.442 metros.
 }
 \examples{

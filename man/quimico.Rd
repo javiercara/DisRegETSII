@@ -3,11 +3,11 @@
 \docType{data}
 \name{quimico}
 \alias{quimico}
-\title{Datos del rendimiento de una reacción química}
+\title{Datos del rendimiento de una reaccion quimica}
 \format{Lista con los siguientes campos:
 \itemize{
-\item rend: rendimiento de la reacción química
-\item conc: concentración (4\%, 6\%, 8\%, 10\%)
+\item rend: rendimiento de la reaccion quimica
+\item conc: concentracion (4\%, 6\%, 8\%, 10\%)
 \item temp: temperatura (T1, T2)
 \item cat: catalizador (C1, C2, C3)
 }}
@@ -15,8 +15,8 @@
 data(quimico)
 }
 \description{
-Se pretende analizar el rendimiento de una reacción química dependiendo
-de los siguientes factores: concentración, catalizador y temperatura.
+Se pretende analizar el rendimiento de una reaccion quimica dependiendo
+de los siguientes factores: concentracion, catalizador y temperatura.
 }
 \examples{
 data(quimico)

@@ -8,7 +8,8 @@
 \itemize{
  }}
 \source{
-Lieblein, J., and Zelen, M. (1956), Statistical investigation of the fatigue life of deep-groove ball bearings, Journal of Research of the National Bureau of Standards, 57, 273-316.
+Lieblein, J., and Zelen, M. (1956), Statistical investigation of the fatigue life of deep-groove ball bearings,
+Journal of Research of the National Bureau of Standards, 57, 273-316.
 }
 \usage{
 data(ballbearings)

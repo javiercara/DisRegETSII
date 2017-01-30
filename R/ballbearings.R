@@ -22,9 +22,9 @@
 #'
 #' @format Lista con los siguientes campos:
 #' \itemize{
-# '\item Com: Company          Codes 1, 2, and 3 for companies A, B, and C
-# '\item N: Test number      1, 2, ... within company
-# '\item Year: Year of test     NA = missing
+# '\item Com: Company Codes 1, 2, and 3 for companies A, B, and C
+# '\item N: Test number 1, 2, ... within company
+# '\item Year: Year of test (NA = missing)
 # '\item NB : No. of bearings
 # '\item P: Load
 # '\item Z: No. of balls
@@ -32,11 +32,12 @@
 # '\item L10: Percentil10
 # '\item L50: Percentil50
 # '\item Slope: Weibull slope
-# '\item Btype: Bearing type     1, 2, and 3 in Company B; 0 otherwise
+# '\item Btype: Bearing type 1, 2, and 3 in Company B; 0 otherwise
 #'  }
 #' @keywords datasets
 #'
-#' @source Lieblein, J., and Zelen, M. (1956), Statistical investigation of the fatigue life of deep-groove ball bearings, Journal of Research of the National Bureau of Standards, 57, 273-316.
+#' @source Lieblein, J., and Zelen, M. (1956), Statistical investigation of the fatigue life of deep-groove ball bearings,
+#' Journal of Research of the National Bureau of Standards, 57, 273-316.
 #'
 #' @examples
 #' data(ballbearings)

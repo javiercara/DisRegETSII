@@ -3,17 +3,17 @@
 \docType{data}
 \name{fibras}
 \alias{fibras}
-\title{Datos del tiempo de combustión de cuatro fibras diferentes}
+\title{Datos del tiempo de combustion de cuatro fibras diferentes}
 \format{Lista con los siguientes campos:
 \itemize{
-\item tiempo: tiempo de combustión (segundos)
+\item tiempo: tiempo de combustion (segundos)
 \item fibra: tipo de fibra (A,B,C,D)
 }}
 \usage{
 data(fibras)
 }
 \description{
-Se ha realizado un experimento para medir el tiempo (en segundos) de combustión
+Se ha realizado un experimento para medir el tiempo (en segundos) de combustion
 de unos retales de cuatro fibras diferentes.
 }
 \examples{

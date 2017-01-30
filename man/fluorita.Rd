@@ -3,19 +3,19 @@
 \docType{data}
 \name{fluorita}
 \alias{fluorita}
-\title{Datos del coste de fabricación de cemento}
+\title{Datos del coste de fabricacion de cemento}
 \format{Lista con los siguientes campos:
 \itemize{
 \item fluo: contenido en fluorita (0\%, 1\%, 2\%, 3\%, 4\%)
 \item mez: tipo de mezcla (1, 2, 3, 4, 5, 6)
-\item cost: coste de fabricación del cemento
+\item cost: coste de fabricacion del cemento
 }}
 \usage{
 data(fluorita)
 }
 \description{
-Se desea estudiar el efecto de la Fluorita en la reducción del coste
-energético en la fabricación de cemento. Se emplean 6 mezclas distintas
+Se desea estudiar el efecto de la Fluorita en la reduccion del coste
+energetico en la fabricacion de cemento. Se emplean 6 mezclas distintas
 de materias primas.
 }
 \examples{

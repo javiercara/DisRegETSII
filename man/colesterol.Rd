@@ -13,7 +13,7 @@
 data(colesterol)
 }
 \description{
-Reducción del nivel de colesterol en la sangre de 20 individuos (después de
+Reduccion del nivel de colesterol en la sangre de 20 individuos (despues de
 dos meses) que son asignados al azar a dos tipos de dieta, A y B.
 }
 \examples{

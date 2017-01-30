@@ -3,18 +3,18 @@
 \docType{data}
 \name{tabaco}
 \alias{tabaco}
-\title{Datos de la producción de monóxido de carbono y el contenido de nicotina y alquitrán de cigarrillos}
+\title{Datos de la produccion de monoxido de carbono y el contenido de nicotina y alquitran de cigarrillos}
 \format{Lista con los siguientes campos:
 \itemize{
-\item alq: contenido en alquitrán (mg)
+\item alq: contenido en alquitran (mg)
 \item nico: contenido en nicotina (mg)
-\item co: monóxido de carbono CO (mg)
+\item co: monoxido de carbono CO (mg)
 }}
 \usage{
 data(tabaco)
 }
 \description{
-Datos de la producción de monóxido de carbono y el contenido de nicotina y alquitrán
+Datos de la produccion de monoxido de carbono y el contenido de nicotina y alquitran
 en 25 marcas diferentes de cigarrillos americanos.
 }
 \examples{

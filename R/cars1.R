@@ -5,7 +5,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(cars)
+#' @usage data(cars1)
 #'
 #' @format Lista con los siguientes campos:
 #' \itemize{
@@ -23,6 +23,6 @@
 # @source
 #'
 #' @examples
-#' data(cars)
-#' \donttest{lm(mpg~weight+engine+horse,data=cars)}
-"cars"
+#' data(cars1)
+#' \donttest{lm(mpg~weight+engine+horse,data=cars1)}
+"cars1"

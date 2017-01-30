@@ -3,7 +3,7 @@
 \docType{data}
 \name{brains}
 \alias{brains}
-\title{Datos del peso del cuerpo y del peso del cerebro de 62 mamíferos}
+\title{Datos del peso del cuerpo y del peso del cerebro de 62 mamiferos}
 \format{Lista con los siguientes campos:
 \itemize{
 \item BrainWt: peso del cerebro (gramos)
@@ -17,7 +17,7 @@ Weisberg, S. (2005). Applied Linear Regression, 3rd edition. New York: Wiley
 data(cerezos)
 }
 \description{
-Se proporciona el peso medio del cuerpo y del peso cerebro para 62 especies de mamíferos.
+Se proporciona el peso medio del cuerpo y del peso cerebro para 62 especies de mamiferos.
 }
 \examples{
 data(fev)

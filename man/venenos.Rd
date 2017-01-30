@@ -3,7 +3,7 @@
 \docType{data}
 \name{venenos}
 \alias{venenos}
-\title{Datos de superviviencia de roedores a los que se le habían suministrado diferentes venenos y antídotos}
+\title{Datos de superviviencia de roedores a los que se le habian suministrado diferentes venenos y antidotos}
 \format{Lista con los siguientes campos:
 \itemize{
 \item ven: tipo de veneno suministrado ('I','II','III')
@@ -14,12 +14,12 @@
 data(forbes)
 }
 \description{
-Se pretende combatir los efectos de ciertos agentes tóxicos.
-Para ello, se analiza el efecto de tres venenos y cuatro antídotos en el tiempo de supervivencia
+Se pretende combatir los efectos de ciertos agentes toxicos.
+Para ello, se analiza el efecto de tres venenos y cuatro antidotos en el tiempo de supervivencia
 de unas ratas. Para el experimento se cogieron 48 animales y se asignaron al azar a cada uno
 de los doce tratamientos resultantes de combinar venenos y antídotos. A cada rata se le
-suministro una cierta cantidad de veneno y después de un cierto tiempo se les administró el
-antídoto. A partir de este momento se cuenta el tiempo de supervivencia del roedor.
+suministro una cierta cantidad de veneno y despues de un cierto tiempo se les administro el
+antidoto. A partir de este momento se cuenta el tiempo de supervivencia del roedor.
 }
 \examples{
 data(venenos)
