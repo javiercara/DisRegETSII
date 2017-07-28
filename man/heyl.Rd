@@ -22,4 +22,3 @@ data(heyl)
 \donttest{aov(G ~ material)}
 }
 \keyword{datasets}
-

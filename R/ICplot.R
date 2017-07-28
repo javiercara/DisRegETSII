@@ -16,6 +16,7 @@
 ICplot <- function(modelo,fac,alpha=0.05)
 #
 # Programmed by E.Caro - Version 1.3 14/02/2014
+# Javier Cara - Version 09/03/2017: cambiar leyenda eje y
 # --------------------------------------------------------------------
 {
 
@@ -38,7 +39,8 @@ ICplot <- function(modelo,fac,alpha=0.05)
     xlabel =  modelo$xlevels[[fac]]
 
     plot(c(1:ncol, 1:ncol), c(xbar+ancho, xbar-ancho), col = 0,
-         xlab = fac, xaxt = "n", ylab = "medias")
+         xlab = fac, xaxt = "n",
+         ylab = colnames(modelo$model)[1] )
     axis(side=1, at=seq(1,ncol), paste(xlabel))
 
     arrows(1:ncol,xbar+ancho,1:ncol,xbar-ancho,angle=90,code=3,length=.1,

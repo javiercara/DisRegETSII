@@ -28,4 +28,3 @@ data(fev)
 \donttest{lm(fev ~ ht+age,data=fev)}
 }
 \keyword{datasets}
-

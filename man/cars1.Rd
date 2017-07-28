@@ -25,4 +25,3 @@ data(cars1)
 \donttest{lm(mpg~weight+engine+horse,data=cars1)}
 }
 \keyword{datasets}
-

@@ -34,4 +34,3 @@ data(ballbearings)
 \donttest{lm( log(L10) ~ log(D) + log(Z) + log(P) , data=ballbearings)}
 }
 \keyword{datasets}
-

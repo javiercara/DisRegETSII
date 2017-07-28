@@ -20,4 +20,3 @@ data(coches)
 \donttest{lm(Consumo~Peso,data=coches)}
 }
 \keyword{datasets}
-

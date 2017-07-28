@@ -32,4 +32,3 @@ data(forbes)
 \donttest{lm(Pres ~ Temp,data=forbes)}
 }
 \keyword{datasets}
-

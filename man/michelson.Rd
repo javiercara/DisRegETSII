@@ -23,4 +23,3 @@ data(michelson)
 \donttest{aov(Velocidad ~ MvN)}
 }
 \keyword{datasets}
-

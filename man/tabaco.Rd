@@ -22,4 +22,3 @@ data(tabaco)
 \donttest{lm(co ~ alq + nico,data=tabaco)}
 }
 \keyword{datasets}
-

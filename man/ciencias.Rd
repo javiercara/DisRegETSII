@@ -28,4 +28,3 @@ data(ciencias)
 \donttest{aov(errores ~ sexo*form,data=ciencias)}
 }
 \keyword{datasets}
-

@@ -24,4 +24,3 @@ data(fev)
 \donttest{lm(BrainsWt ~ BodyWt,data=brains)}
 }
 \keyword{datasets}
-

@@ -4,15 +4,15 @@
 \alias{interIC}
 \title{Funcion para crear el grafico de interaccion con intervalos de confianza}
 \usage{
-interIC(modelo, fac2, fac1, alpha = 0.05)
+interIC(modelo, facX, facY, alpha = 0.05)
 }
 \arguments{
 \item{modelo:}{variable que define el modelo de analisis de varianza para analizar. Este
 modelo se ha debido crear previamente con la funcion "aov".}
 
-\item{fac2:}{corresponde al nombre del factor que se representa en el eje X. IMPORTANTE: Este nombre ha de ir entre comillas.}
+\item{facX:}{corresponde al nombre del factor que se representa en el eje X. IMPORTANTE: Este nombre ha de ir entre comillas.}
 
-\item{fac1:}{corresponde al nombre del otro factor. IMPORTANTE: Este nombre ha de ir entre comillas.}
+\item{facY:}{corresponde al nombre del otro factor. IMPORTANTE: Este nombre ha de ir entre comillas.}
 
 \item{alpha:}{Indica el nivel de significacion del intervalo de confianza calculado.
 Es un argumento opcional. Por defecto es 0.05.}
@@ -25,4 +25,3 @@ El programa interIC genera el diagrama de interaccion incluyendo intervalos de c
  interIC(mod, "ven","ant")
 
 }
-

@@ -21,4 +21,3 @@ data(colesterol)
 \donttest{t.test(colesterol$A,colesterol$B,var.equal=TRUE)}
 }
 \keyword{datasets}
-

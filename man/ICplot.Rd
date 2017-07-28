@@ -23,4 +23,3 @@ El programa ICplot genera el grafico de los intervalos de confianza para las med
  ICplot(mod, "ven")
 
 }
-

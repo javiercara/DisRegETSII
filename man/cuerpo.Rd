@@ -51,4 +51,3 @@ data(cuerpo)
 \donttest{lm(Peso ~ Altura,data=cuerpo)}
 }
 \keyword{datasets}
-

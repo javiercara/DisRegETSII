@@ -27,4 +27,3 @@ data(heights)
 \donttest{lm(Dheight ~ Mheight,data=heights)}
 }
 \keyword{datasets}
-

@@ -5,8 +5,8 @@
 #'
 #' @param modelo: variable que define el modelo de analisis de varianza para analizar. Este
 #'                modelo se ha debido crear previamente con la funcion "aov".
-#' @param fac2: corresponde al nombre del factor que se representa en el eje X. IMPORTANTE: Este nombre ha de ir entre comillas.
-#' @param fac1: corresponde al nombre del otro factor. IMPORTANTE: Este nombre ha de ir entre comillas.
+#' @param facX: corresponde al nombre del factor que se representa en el eje X. IMPORTANTE: Este nombre ha de ir entre comillas.
+#' @param facY: corresponde al nombre del otro factor. IMPORTANTE: Este nombre ha de ir entre comillas.
 #' @param alpha: Indica el nivel de significacion del intervalo de confianza calculado.
 #'               Es un argumento opcional. Por defecto es 0.05.
 #' @export
@@ -14,24 +14,26 @@
 #'  mod = aov(tiempo ~ ven*ant, data = venenos)
 #'  interIC(mod, "ven","ant")
 #'
-interIC<- function(modelo,fac2,fac1,alpha=0.05)
+interIC<- function(modelo,facX,facY,alpha=0.05)
   # Programmed by E.Caro - Version 04/03/2015
+  # Javier Cara - Version 09/03/2017: cambiar colores, posicion leyenda, margenes
 {
-
+  
+  # separacion en horizontal 
   epsilon = 0.03
-  colores = c(27, 66, 33, 8);
+  
+  #colores = c(27, 66, 33, 8)
 
   tabla   <- model.tables(modelo, type = "mean")
 
-  fac     =   paste(fac1, ":", fac2, sep = "")
-  xlabel 	<-  paste('Nivel:', modelo$xlevels[[fac2]])
+  fac     =   paste(facY, ":", facX, sep = "")
+  xlabel 	<-  modelo$xlevels[[facX]]
   xbar    =   tabla$table[[fac]]
   if (length(xbar ) == 0)
-  { fac   =   paste(fac2, ":", fac1, sep = "")
+  { fac   =   paste(facX, ":", facY, sep = "")
     xbar  <-  tabla$table[[fac]]
     xbar 	<-  t(xbar )
   }
-
 
   tabla 		<- model.tables(modelo, type = "mean")
   num_dat 	<- tabla['n']
@@ -43,12 +45,21 @@ interIC<- function(modelo,fac2,fac1,alpha=0.05)
   dime      <- dim(xbar)
   ncol  	  <- dime[2]
   nrow  	  <- dime[1]
+  
+  colores = rainbow(nrow)
+  #colores = 1:nrow
 
-
+  maxY = max(xbar)+ancho
+  minY = min(xbar)-ancho
+  minX = 0.75
+  maxX = ncol+0.25
   plot(c(1:ncol, 1:ncol),
        c( xbar[1,]*0+max(xbar)+ancho,
           xbar[1,]*0+min(xbar)-ancho), col = 0 ,
-       xlab = paste('Factor:', fac2), xaxt = "n", ylab = "medias")
+       xlab = paste('Factor:', facX), xaxt = "n", 
+       ylab = colnames(modelo$model)[1],
+       ylim = c(0.7*minY,1.5*maxY),xlim = c(minX,maxX))
+  
 
   axis(side=1, at=seq(1,ncol), paste(xlabel))
 
@@ -74,10 +85,9 @@ interIC<- function(modelo,fac2,fac1,alpha=0.05)
   }
 
 #   legend('top',modelo$xlevel$VEN)
-#   legend("top", modelo$xlevel[[fac1]])
-#   legend('top', paste('Nivel:', modelo$xlevels[[fac1]]), col = colores)
-
-legend("topright", inset=.05, title=paste("Factor:", fac1),
-       paste('Nivel:', modelo$xlevels[[fac1]]), fill=colores, horiz = TRUE)
+#   legend("top", modelo$xlevel[[facY]])
+#   legend('top', paste('Nivel:', modelo$xlevels[[facY]]), col = colores)
+legend("topright", inset=.05, title=paste("Factor:", facY),
+       paste(modelo$xlevels[[facY]]), fill=colores, horiz = TRUE)
 
 }

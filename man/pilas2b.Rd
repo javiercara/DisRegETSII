@@ -21,4 +21,3 @@ data(pilas2b)
 \donttest{aov(Tdescarga ~ marca)}
 }
 \keyword{datasets}
-

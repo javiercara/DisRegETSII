@@ -26,4 +26,3 @@ data(venenos)
 \donttest{aov(tiempo ~ ven*ant,data=venenos)}
 }
 \keyword{datasets}
-

@@ -23,4 +23,3 @@ data(quimico)
 \donttest{aov(rend ~ con*temp*cat,data=quimico)}
 }
 \keyword{datasets}
-

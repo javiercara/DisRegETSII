@@ -21,4 +21,3 @@ data(fibras)
 \donttest{aov(tiempo ~ fibra)}
 }
 \keyword{datasets}
-

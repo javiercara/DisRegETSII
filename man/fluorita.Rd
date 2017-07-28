@@ -23,4 +23,3 @@ data(fluorita)
 \donttest{aov(cost ~ fluo + mez,data=fluorita)}
 }
 \keyword{datasets}
-

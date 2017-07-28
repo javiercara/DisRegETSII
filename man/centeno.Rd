@@ -22,4 +22,3 @@ data(centeno)
 \donttest{aov(rend ~ sem)}
 }
 \keyword{datasets}
-

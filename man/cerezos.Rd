@@ -22,4 +22,3 @@ data(cerezos)
 \donttest{lm(volumen ~ diametro + altura,data=cerezos)}
 }
 \keyword{datasets}
-

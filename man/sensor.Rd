@@ -21,4 +21,3 @@ data(sensor)
 \donttest{aov(CO ~ tiposensor)}
 }
 \keyword{datasets}
-
