@@ -10,7 +10,7 @@ Profesores:
 * José Manuel Mira (josemanuel.mira@upm.es)
 * Carolina García Martos (garcia.martos@upm.es)
 * Eduardo Caro Huertas (eduardo.caro@upm.es)
-* Javier Cara (javier.cara@upm.es)
+* [Javier Cara](https://javiercara.github.io/index.html) (javier.cara@upm.es)
 
 ## Instalacion
 1. Instalar el paquete *devtools* y cargarlo:
