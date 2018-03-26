@@ -1,4 +1,4 @@
-#' descarga los datos desde github
+#' descarga los datos desde github a la carpeta DisRegETSII
 #'
 #' @keywords github
 #'
@@ -7,14 +7,15 @@
 #' @examples
 #' \donttest{descargar_datos()}
 #'
-descargar_datos <- function(repositorio="DisRegETSII", carpeta_datos="data-raw"){
+descargar_datos <- function(nueva_carpeta = "DisRegETSII"){
   # se descarga la carpeta_datos del repositorio
   
   github_username = "javiercara"
-  github_repository = repositorio
+  github_repository = "DisRegETSII"
   github_branch = "master"
-  github_subdir = carpeta_datos
-  local_dir = carpeta_datos
+  github_subdir = "data-raw"
+  local_dir = nueva_carpeta
+  file_type = c("txt","dat")
   
-  download_github_subdir(github_username, github_repository, github_branch = "master", github_subdir, local_dir)
+  download_github_subdir(github_username, github_repository, github_branch, github_subdir, local_dir, file_type)
 }
