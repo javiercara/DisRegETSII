@@ -10,11 +10,10 @@ Profesores:
 * José Manuel Mira (josemanuel.mira@upm.es)
 * Carolina García Martos (garcia.martos@upm.es)
 * Eduardo Caro Huertas (eduardo.caro@upm.es)
-* [Javier Cara](https://javiercara.github.io/index.html) (javier.cara@upm.es)
+* [Javier Cara](https://www.javiercara.com) (javier.cara@upm.es)
 
 ## Instalacion
-1. Instalar el paquete *devtools* y cargarlo:
+1. Instalar el paquete *devtools*:
 	- install.packages("devtools")
-	- library("devtools")
 2. Instalar el paquete utilizando la funcion *install_github* de devtools
-	- install_github("javiercara/DisRegETSII")
+	- devtools::install_github("javiercara/DisRegETSII")

@@ -4,7 +4,7 @@
 \alias{interIC}
 \title{Funcion para crear el grafico de interaccion con intervalos de confianza}
 \usage{
-interIC(modelo, facX, facY, alpha = 0.05)
+interIC(modelo, facX, facY, alpha = 0.05, leyenda_horiz = T)
 }
 \arguments{
 \item{modelo:}{variable que define el modelo de analisis de varianza para analizar. Este
@@ -23,5 +23,6 @@ El programa interIC genera el diagrama de interaccion incluyendo intervalos de c
 \examples{
  mod = aov(tiempo ~ ven*ant, data = venenos)
  interIC(mod, "ven","ant")
+ interIC(mod, "ven","ant", leyenda_horiz = F)
 
 }
