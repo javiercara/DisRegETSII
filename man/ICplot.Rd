@@ -4,7 +4,7 @@
 \alias{ICplot}
 \title{Funcion para crear el grafico de medias con intervalos de confianza}
 \usage{
-ICplot(modelo, fac, alpha = 0.05)
+ICplot(modelo, fac, alpha = 0.05, valores = TRUE)
 }
 \arguments{
 \item{modelo:}{variable que define el modelo de analisis de varianza para analizar. Este
@@ -14,6 +14,8 @@ modelo se ha debido crear previamente con la funcion "aov".}
 
 \item{alpha:}{Indica el nivel de significacion del intervalo de confianza calculado.
 Es un argumento opcional. Por defecto es 0.05.}
+
+\item{valores:}{devuelve los valores de los intervalos. Por defecto es TRUE.}
 }
 \description{
 El programa ICplot genera el grafico de los intervalos de confianza para las medias en el analisis de varianza.

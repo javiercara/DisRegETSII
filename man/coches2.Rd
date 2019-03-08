@@ -26,6 +26,6 @@ Datos de 393 vehiculos
 }
 \examples{
 data(coches2)
-\donttest{lm(Consumo~Peso+CC+CV,data=coches2)}
+\donttest{lm(Consumo ~ Peso + CC + CV, data = coches2)}
 }
 \keyword{datasets}

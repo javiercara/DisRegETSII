@@ -10,7 +10,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(forbes)
+#' @usage data(venenos)
 #'
 #' @format Lista con los siguientes campos:
 #' \itemize{

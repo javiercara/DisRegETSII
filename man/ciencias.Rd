@@ -15,7 +15,7 @@ data(ciencias)
 }
 \description{
 Un investigador quiere estudiar el efecto del sexo (hombre, mujeres) y
-tipo de formación (ciencias, letras) en el dominio del ingles
+tipo de formacion (ciencias, letras) en el dominio del ingles
 escrito en profesores universitarios. Para ello se analiza el
 numero de incorrecciones gramaticales en articulos cientificos
 enviados a publicacion. Para combinacion de niveles de los
@@ -25,6 +25,6 @@ paginas.
 }
 \examples{
 data(ciencias)
-\donttest{aov(errores ~ sexo*form,data=ciencias)}
+\donttest{aov(errores ~ sexo*form, data = ciencias)}
 }
 \keyword{datasets}

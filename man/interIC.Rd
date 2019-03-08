@@ -4,7 +4,8 @@
 \alias{interIC}
 \title{Funcion para crear el grafico de interaccion con intervalos de confianza}
 \usage{
-interIC(modelo, facX, facY, alpha = 0.05, leyenda_horiz = T)
+interIC(modelo, facX, facY, alpha = 0.05, leyenda_horiz = T,
+  valores = T)
 }
 \arguments{
 \item{modelo:}{variable que define el modelo de analisis de varianza para analizar. Este
@@ -16,6 +17,10 @@ modelo se ha debido crear previamente con la funcion "aov".}
 
 \item{alpha:}{Indica el nivel de significacion del intervalo de confianza calculado.
 Es un argumento opcional. Por defecto es 0.05.}
+
+\item{leyenda_horiz:}{la layenda aparece horizontal (TRUE) o vertical (FALSE). Por defecto es TRUE.}
+
+\item{valores:}{devuelve los valores de los intervalos. Por defecto es TRUE.}
 }
 \description{
 El programa interIC genera el diagrama de interaccion incluyendo intervalos de confianza.

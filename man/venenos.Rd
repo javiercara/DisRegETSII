@@ -11,7 +11,7 @@
 \item tiempo: tiempo de superviviencia del roedor (en unidades de 10 horas)
 }}
 \usage{
-data(forbes)
+data(venenos)
 }
 \description{
 Se pretende combatir los efectos de ciertos agentes toxicos.

@@ -14,7 +14,7 @@
 data(cerezos)
 }
 \description{
-Datos del volumen de madera de 31 troncos la especie “cerezo negro” en funcion de la altura del tronco
+Datos del volumen de madera de 31 troncos la especie "cerezo negro" en funcion de la altura del tronco
 y del diametro del mismo a un metro sobre el suelo.
 }
 \examples{

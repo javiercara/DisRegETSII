@@ -21,5 +21,5 @@
 #'
 #' @examples
 #' data(centeno)
-#' \donttest{aov(rend ~ sem)}
+#' \donttest{aov(rend ~ sem, data = centeno)}
 "centeno"

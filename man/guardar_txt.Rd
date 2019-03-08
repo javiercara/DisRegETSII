@@ -13,4 +13,10 @@ el nombre de la carpeta es DisRegETSII}
 \description{
 Guarda todos los datos del paquete en formato txt
 }
+\examples{
+\donttest{guardar_txt()}
+\donttest{guardar_txt("datos")}
+\donttest{guardar_txt("../datos")}
+
+}
 \keyword{txt}

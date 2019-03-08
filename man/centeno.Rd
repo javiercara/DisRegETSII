@@ -19,6 +19,6 @@ cada semilla a 6 parcelas.
 }
 \examples{
 data(centeno)
-\donttest{aov(rend ~ sem)}
+\donttest{aov(rend ~ sem, data = centeno)}
 }
 \keyword{datasets}

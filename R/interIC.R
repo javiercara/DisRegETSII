@@ -9,16 +9,20 @@
 #' @param facY: corresponde al nombre del otro factor. IMPORTANTE: Este nombre ha de ir entre comillas.
 #' @param alpha: Indica el nivel de significacion del intervalo de confianza calculado.
 #'               Es un argumento opcional. Por defecto es 0.05.
+#' @param leyenda_horiz: la layenda aparece horizontal (TRUE) o vertical (FALSE). Por defecto es TRUE.
+#' @param valores: devuelve los valores de los intervalos. Por defecto es TRUE.
+#' 
 #' @export
 #' @examples
 #'  mod = aov(tiempo ~ ven*ant, data = venenos)
 #'  interIC(mod, "ven","ant")
 #'  interIC(mod, "ven","ant", leyenda_horiz = F)
 #'
-interIC<- function(modelo,facX,facY,alpha=0.05,leyenda_horiz=T){
+interIC<- function(modelo,facX,facY,alpha=0.05,leyenda_horiz=T,valores=T){
   # Programmed by E.Caro - Version 04/03/2015
   # Javier Cara - Version 09/03/2017: cambiar colores, posicion leyenda, margenes
   # Javier Cara - Version 2018/03/28: leyenda vertical
+  # Javier Cara - 2019/08/03: salida de los valores numericos
   
   # separacion en horizontal 
   epsilon = 0.03
@@ -78,8 +82,7 @@ interIC<- function(modelo,facX,facY,alpha=0.05,leyenda_horiz=T){
     }
   }
 
-  for (i in 1:nrow)
-  {
+  for (i in 1:nrow){
     arrows(1:ncol + i*epsilon-.5*epsilon*nrow,
            xbar[i,]+ancho,
            1:ncol + i*epsilon-.5*epsilon*nrow,
@@ -95,5 +98,39 @@ interIC<- function(modelo,facX,facY,alpha=0.05,leyenda_horiz=T){
   legend("topright", inset=.05, title=paste("Factor:", facY),
         paste(modelo$xlevels[[facY]]), fill = colores, horiz = leyenda_horiz, 
         box.lty = 0, cex = .85)
+  
+  # data.frame para la salida
+  if (valores){
+    facX1 = modelo$xlevels[[facX]]
+    facY1 = modelo$xlevels[[facY]]
+    nx = length(facX1) # numero de niveles de facX
+    ny = length(facY1) # numero de niveles de facY
+    nn = nx*ny
+    
+    # valors para el data.frame
+    facX2 = rep("",nn)
+    facY2 = rep("",nn)
+    k = 1
+    for (i in 1:nx){
+      for (j in 1:ny){
+        facX2[k] = facX1[i]
+        facY2[k] = facY1[j]
+        k = k+1
+      }
+    }
+
+    # valors para el data.frame
+    media = as.vector(xbar)
+    LimInf = media - ancho
+    LimSup = media + ancho
+    
+    salida = data.frame(facX2, facY2,
+                        media = round(media,2), 
+                        LimInf = round(LimInf,2), 
+                        LimSup = round(LimSup,2))
+    names(salida) = c(facX,facY, "media", paste(alpha/2*100,"%",sep=""), paste((1-alpha/2)*100,"%",sep=""))
+    
+    return(salida)
+  }
 
 }

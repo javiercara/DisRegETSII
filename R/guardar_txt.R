@@ -9,7 +9,7 @@
 #'
 #' @examples
 #' \donttest{guardar_txt()}
-#' \donttest{guardar_txt("datos)}
+#' \donttest{guardar_txt("datos")}
 #' \donttest{guardar_txt("../datos")}
 #'
 guardar_txt <- function(carpeta="DisRegETSII"){
