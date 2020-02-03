@@ -22,6 +22,8 @@ interIC2 <- function(modelo,facX,facY,alpha=0.05,valores=T){
   # Javier Cara - 03/02/2020
   # --------------------------------------------------------------------
   
+  library(ggplot2)
+  
   # datos (es un data.frame)
   datos = modelo$model
   
