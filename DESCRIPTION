@@ -1,13 +1,16 @@
 Package: DisRegETSII
 Type: Package
 Title: Funciones y datos de la asignatura "Diseno de Experimentos y Modelos de Regresion" de la ETSII-UPM
-Version: 0.1.4
+Version: 0.2.1
 Author: Javier Cara
 Maintainer: Javier Cara <javier.cara@upm.es>
 Description: Funciones y datos de la asignatura "Diseno de Experimentos y Modelos de Regresion" de la ETSII-UPM
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 6.1.1
-Depends: R (>= 2.10)
+Depends: 
+  R (>= 2.10)
+Imports:
+  ggplot2
 date: 2018-03-28
 Encoding: UTF-8
